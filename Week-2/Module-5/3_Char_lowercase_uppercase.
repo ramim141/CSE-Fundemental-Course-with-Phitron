@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    char letter;
-    scanf("%c", &letter);
+    char A;
+    scanf("%c", &A);
     
-    if (letter >= 'a' && letter <= 'z') {
+    if (A >= 'a' && A <= 'z') {
         // letter is lowercase, so convert it to uppercase and print
-        printf("%c", letter - 'a' + 'A');
-    } else if (letter >= 'A' && letter <= 'Z') {
+        printf("%c", A-32);
+    } else if (A >= 'A' && A <= 'Z') {
         // letter is uppercase, so convert it to lowercase and print
-        printf("%c", letter - 'A' + 'a');
+        printf("%c", A+32);
     }
     
     return 0;
