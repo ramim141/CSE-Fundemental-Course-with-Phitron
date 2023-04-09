@@ -2,17 +2,18 @@
 int main()
 {
     int A, B;
-    printf("Enter the value of A:" );
-    scanf("%d", &A);
+  
+    scanf("%d%d", &A, &B);
 
-    printf("\nEnter the value of B: ");
-    scanf("%d", &A);
+   
+    
 
     if(A>=B)
     {
         printf("Yes");
     }
-    else 
+
+    else
     {
         printf("No");
     }
