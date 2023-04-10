@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main()
+{
+    int n, max = INT_MIN, min = INT_MIN, a;
+    scanf("%d\n", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        scanf("%d", &a);
+
+        if (a > max)
+        {
+            max = a;
+        }
+        if (a < min)
+        {
+            min = a;
+        }
+    }
+    printf("%d\n", min);
+    printf("%d\n", max);
+
+    return 0;
+}
